@@ -7,6 +7,7 @@ class AddressMetaController < ApplicationController
 
     address_data = MiamiDadeGeo::Address.new params[:address]
     meta_data = {
+      address: params[:address],
       x: address_data.x,
       y: address_data.y,
       lat: address_data.lat,
