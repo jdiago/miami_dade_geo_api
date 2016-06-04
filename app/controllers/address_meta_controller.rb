@@ -16,5 +16,7 @@ class AddressMetaController < ApplicationController
     }
 
     render json: meta_data
+  rescue
+    render json: { error: 'Invalid address' }, status: 422
   end
 end
