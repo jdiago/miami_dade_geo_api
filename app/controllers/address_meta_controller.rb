@@ -17,7 +17,7 @@ class AddressMetaController < ApplicationController
     }
 
     render json: meta_data
-  rescue
+  rescue MiamiDadeGeo::InvalidAddressError
     render json: { error: 'Invalid address' }, status: 422
   end
 end
