@@ -12,7 +12,7 @@ class AddressMetaController < ApplicationController
       y: address_data.y,
       lat: address_data.lat,
       long: address_data.long,
-      munic_code: address_data.munic_code,
+      municipality: address_data.municipality,
       zip_code: address_data.zip
     }
 
